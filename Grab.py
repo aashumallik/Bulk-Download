@@ -1,4 +1,6 @@
 #!/usr/bin/python
+# © Aashutosh Mallik
+
 import subprocess, urllib, random
 class NoBlocks(Exception): pass
 def getblocks():
