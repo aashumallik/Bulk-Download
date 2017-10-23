@@ -3,7 +3,7 @@
 import subprocess, urllib, random
 class NoBlocks(Exception): pass
 def getblocks():
-    r = urllib.urlopen("https://{?(Domain goes here)?}/grab").read()
+    r = urllib.urlopen("https://{?(http://www.jstor.org/stable/pdfplus)?}/grab").read()
     if '<html' in r.lower(): raise NoBlocks
     return r.split()
 
